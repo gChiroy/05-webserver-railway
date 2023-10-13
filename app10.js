@@ -16,9 +16,9 @@ const express = require('express')
 const app = express()
 const port = 8080
 
-//Servir contenido estatico public2 donde esta el templated
+//Servir contenido estatico public2 donde esta el templated busca el iindex pagaina principal
 app.use(express.static('public2'))
-
+//realiza lo mismo 
 app.get('/', (req, res) => {
     res.send('Home Page ')
 })  

@@ -7,6 +7,7 @@
  * poder renderizar el sitio web y enviarselo de esa forma al cliente. 
  * Se recomienda utlizar handlebars para sitios web sencillos, pero para sitios 
  * complejos se recomienda utliizar Frameworks complejos como Angular, Veu, React
+ * renderizza la pagina y vuelve pagina semi estatico
  */
 
 /**
@@ -46,6 +47,7 @@ const port = 8080
  */
 
 //utilizacion de hbs para el renderizado de la pagina web
+
 app.set('view engine', 'hbs')
 
 /**
@@ -66,11 +68,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/generic', (req, res) => {
-    res.sendFile(__dirname +'./public3/template/generic.html')
+    res.sendFile(__dirname +'./public3/generic.html')
 })
 
 app.get('/', (req, res) => {
-    res.send(__dirname +'/public3/template/elements.html')
+    res.send(__dirname +'/public3/elements.html')
 })  
 
 
