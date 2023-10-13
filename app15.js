@@ -10,7 +10,7 @@
  * 7 para verificar si funciona el script ejecutar el comando npm start
  * 8 crear archivo .gitignore y agregar en gitignore node_modules/
  * 9 git init -- si es la primera vez que se inicializa 
- * 10 git .add --este es para tomar un tipo snapshot
+ * 10 git add . --este es para tomar un tipo snapshot
  * 11 git commit -m "primer commit - webserver listo"
  * 12 git push
  */
